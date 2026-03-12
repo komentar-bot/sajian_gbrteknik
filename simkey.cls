@@ -95,9 +95,18 @@
 
 % Itemize
 \usepackage{enumitem} %3 lines after this resolve bullet disappear and adjust spacing
-\setitemize{label=\usebeamerfont*{itemize item}%
-	\usebeamercolor[fg]{itemize item}
-	\usebeamertemplate{itemize item},noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\setitemize[1]{label=\usebeamerfont*{itemize item}%
+  \usebeamercolor[fg]{itemize item}
+  \usebeamertemplate{itemize item}}
+
+\setitemize[2]{label=\usebeamerfont*{itemize subitem}%
+  \usebeamercolor[fg]{itemize subitem}
+  \usebeamertemplate{itemize subitem}}
+
+\setitemize[3]{label=\usebeamerfont*{itemize subsubitem}%
+  \usebeamercolor[fg]{itemize subsubitem}
+  \usebeamertemplate{itemize subsubitem}}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
 
 % pagenumber
 \setbeamercolor{footline}{fg=blue}
