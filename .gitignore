@@ -34,3 +34,4 @@
 *.fdb_latexmk
 *.swp
 *.swo
+output/
