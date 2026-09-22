@@ -1,0 +1,437 @@
+%! TEX root = huruf_angka_temu2.tex
+% the main TeX file which is intended to compile, :VimtexReload after adjustment
+% :h vimtex-tex-root
+\documentclass[../gbr_teknik.tex]{subfiles}
+% \includeonlyframes{current}
+% \setbeameroption{hide notes} % Only slides
+% \setbeameroption{show only notes} % Only notes
+\setbeameroption{show notes on second screen=right} % Both
+
+\title{Gambar Teknik Dasar: \\ Huruf, Angka Standar, \& Konstruksi Geometris}
+\subtitle{Mata Kuliah Gambar Teknik -- Pertemuan ke-2}
+\author{Nama Dosen \and Program Studi}
+\date{\today}
+
+\begin{document}
+
+% ---------------------------------------------------
+% SLIDE 1: Judul Utama
+% ---------------------------------------------------
+\begin{frame}[mytitle=center, mycolor=digiPH_ocean, dark]
+	\titlepage
+	\vspace{-1em}
+	\begin{center}
+		\footnotesize \textit{Visual: Potongan gambar kerja komponen mesin (etiket, ukuran, segi enam, elips)}
+	\end{center}
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 2: Capaian dan Tujuan
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Capaian dan Tujuan Pembelajaran}
+
+	\textbf{Capaian Pembelajaran:}
+	Menghasilkan tulisan, etiket, garis, dan konstruksi geometris yang jelas, seragam, proporsional, dan sesuai kaidah dokumentasi teknik.
+
+	\vspace{1em}
+	\textbf{Tujuan Pembelajaran:}
+	Setelah pembelajaran, mahasiswa mampu:
+	\begin{enumerate}
+		\item Menjelaskan fungsi dan persyaratan huruf serta angka teknik.
+		\item Menerapkan ukuran dan proporsi tulisan secara konsisten.
+		\item Membuat etiket gambar dengan benar.
+		\item Menggambar konstruksi garis, sudut, segi banyak, dan elips dengan prosedur yang tepat.
+	\end{enumerate}
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 3: Peta Pertemuan
+% ---------------------------------------------------
+\begin{frame}[mytitle=center, mycolor=digiPH_gray, light]
+	\frametitle{Peta Pertemuan Hari Ini}
+	\begin{center}
+		\Large
+		Huruf dan Angka \\
+		$\downarrow$ \\
+		Garis dan Lembar Gambar \\
+		$\downarrow$ \\
+		Etiket \\
+		$\downarrow$ \\
+		Konstruksi Geometris \\
+		$\downarrow$ \\
+		Praktik
+	\end{center}
+\end{frame}
+
+
+
+
+\bgdarkimg{../figures/engineer_partner_drawing_working.jpg}
+% \begin{figure}
+% \begin{center}
+%     \includegraphics[width=.82\textwidth]{../figures/engineer_partner_drawing_working.jpg}
+%        % filename may not contain space but _
+% \end{center}
+% \caption{}
+% \label{fig:}
+% \end{figure}
+
+
+% ---------------------------------------------------
+% SLIDE 4: Apersepsi
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Apersepsi: Tulisan sebagai Bahasa Teknik}
+
+	\begin{itemize}
+		\item \textbf{Mengingat kembali:} Gambar teknik adalah alat komunikasi antara perancang dan pelaksana.
+		\item \textbf{Pertanyaan Pemantik:} \\
+		      \textit{"Apa akibatnya bila angka 3 terbaca 8 pada ukuran sebuah poros?"}
+		\item Tulisan yang tidak jelas dapat menyebabkan:
+		      \begin{itemize}
+			      \item Salah tafsir desain.
+			      \item Kesalahan produksi manufaktur.
+			      \item Pemborosan biaya material dan waktu.
+		      \end{itemize}
+	\end{itemize}
+
+	% \begin{blockcolor}
+	% 	\textbf{Aktivitas Kelas:} Mari perhatikan dua contoh tulisan ukuran (rapi vs. asal-asalan) di papan. Mana yang lebih dapat dipercaya untuk diproduksi?
+	% \end{blockcolor}
+\end{frame}
+
+\bgdarkimg{../figures/hand_holding_pen.jpg}
+
+
+% ---------------------------------------------------
+% SLIDE 5: Fungsi dan Ciri
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Fungsi dan Ciri Huruf serta Angka Teknik}
+
+	\textbf{Fungsi Utama:}
+	Menyatakan ukuran, keterangan bagian gambar, catatan spesifik, dan isi kolom etiket.
+
+	\vspace{0.5em}
+	\textbf{Ciri Wajib Tulisan Teknik:}
+	\begin{itemize}
+		\item Jelas dan mudah dibaca (tidak terlalu kecil).
+		\item Seragam bentuk dan ukurannya.
+		\item Dapat direproduksi (fotokopi, mikrofilm, pemindaian digital).
+		\item Dapat dibuat dengan cepat.
+	\end{itemize}
+
+	\vspace{0.5em}
+	\textbf{Landasan Standar:}
+	\begin{itemize}
+		\item ISO 3098-1:2015 (Persyaratan umum huruf dokumentasi teknik).
+		\item Prinsip ini berlaku untuk gambar manual maupun CAD (fon ISO).
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t,mycolor=digiPH_red,mytitle=standard,dark]
+	\frametitle{Standar Huruf}
+
+	\includegraphics<1>[width=.9\textwidth]{../figures/bentukhuruf.jpg}
+	\includegraphics<2>[width=.9\textwidth]{../figures/bentukhurufmiring.jpg}
+
+	\includegraphics<3>[width=.9\textwidth]{../figures/huruf.jpg}
+
+\end{frame}
+
+\bgdarkimg{../figures/Whiteboard_58_scaled_1349x900.jpg}
+
+% ---------------------------------------------------
+% SLIDE 6: Parameter Proporsi
+% ---------------------------------------------------
+\begin{frame}[mytitle=imageplus]
+	\frametitle{Parameter Proporsi Huruf}
+
+	Semua parameter dinyatakan sebagai perbandingan terhadap $h$, sehingga tulisan tetap proporsional pada ukuran berapa pun.
+
+	\vspace{1em}
+	\begin{itemize}
+		\item \textbf{h} = tinggi huruf besar/angka (ukuran nominal)
+		\item \textbf{c} = tinggi huruf kecil
+		\item \textbf{a} = jarak antarhuruf
+		\item \textbf{b} = jarak antarbaris (garis dasar ke garis dasar)
+		\item \textbf{e} = jarak antarkata
+		\item \textbf{d} = tebal huruf (goresan pensil/pena)
+	\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 7: Tipe A dan Tipe B
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Tipe A \& Tipe B serta Deret Ukuran}
+
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{lcc}
+			\toprule
+			\textbf{Parameter}       & \textbf{Tipe A} & \textbf{Tipe B} \\
+			\midrule
+			Tebal huruf ($d$)        & $1/14~h$        & $1/10~h$        \\
+			Tinggi huruf kecil ($c$) & $10/14~h$       & $7/10~h$        \\
+			Jarak huruf ($a$)        & $2/14~h$        & $2/10~h$        \\
+			Jarak baris ($b$)        & $20/14~h$       & $14/10~h$       \\
+			Jarak kata ($e$)         & $6/14~h$        & $6/10~h$        \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+
+	\textbf{Deret tinggi nominal (mm):} 2,5 -- 3,5 -- 5 -- 7 -- 10 -- 14 -- 20. \\
+	(Kelipatan $\approx \sqrt{2}$, sejalan dengan deret ukuran kertas seri A).
+
+	\vspace{0.5em}
+	\textbf{Contoh (h = 5 mm Tipe B):} $d = 0,5$ mm, $c = 3,5$ mm, $a = 1$ mm, $b = 7$ mm, $e = 3$ mm. \\
+	\textit{Latihan: Hitung parameter untuk h = 7 mm tipe A dan B!}
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 8: Bentuk Huruf dan Teknik
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Bentuk Huruf Tegak \& Miring}
+
+	\textbf{Dua Bentuk Standar:}
+	\begin{enumerate}
+		\item Tegak (V - \textit{Vertical})
+		\item Miring (S - \textit{Slanted}): Kemiringan \textbf{$15^\circ$ terhadap garis vertikal}.
+	\end{enumerate}
+
+	\textbf{Teknik Menulis Manual:}
+	\begin{itemize}
+		\item Tarik garis bantu tipis untuk batas $h$, $c$, dan garis dasar.
+		\item Gunakan \textbf{satu jenis kemiringan} secara konsisten.
+		\item Ikuti urutan goresan, jaga tebal goresan merata (pensil sesuai $d$).
+	\end{itemize}
+
+	\vspace{0.5em}
+	\textit{Demonstrasi Dosen: Menulis satu baris kata dengan $h = 7$ mm.}
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 9: Garis dan Lembar
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Garis dan Lembar Gambar}
+
+	\textbf{Jenis dan Tebal Garis (ISO 128-2:2022):}
+	\begin{itemize}
+		\item Kontinu tebal: Tepi tampak benda.
+		\item Kontinu tipis: Garis ukur, garis bantu, arsir.
+		\item Putus-putus: Tepi tersembunyi.
+		\item Titik-strip: Garis sumbu.
+		\item \textit{Perbandingan tebal : tipis = 2 : 1 (misal 0,5 mm dan 0,25 mm).}
+	\end{itemize}
+
+	\textbf{Lembar Gambar:}
+	\begin{itemize}
+		\item \textbf{ISO 5457:1999:} Mengatur ukuran seri A (A0--A4), garis bingkai, dan tanda pusat gambar.
+		\item \textbf{ISO 128-1:2020:} Prinsip umum penyajian.
+	\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 10: Etiket Gambar
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Etiket (Kepala Gambar)}
+
+	\textbf{Fungsi:} Identitas dan keterangan resmi sebuah gambar.\\
+	\textbf{Posisi:} Sudut kanan bawah bidang gambar, di dalam bingkai.
+
+	\vspace{0.5em}
+	\textbf{Isi Pokok (ISO 7200):}
+	\begin{itemize}
+		\item Nama benda/judul gambar, Nomor gambar.
+		\item Skala, Satuan, Simbol proyeksi, Bahan.
+		\item Tanggal, Nama penggambar \& pemeriksa, Nama institusi.
+	\end{itemize}
+
+	\textit{Aturan Teks:} Judul dan nomor gambar berukuran lebih besar ($h$), sedangkan data lainnya lebih kecil.
+
+	\vspace{0.5em}
+	\textit{Demonstrasi Dosen: Langkah membuat kotak luar, pembagian kolom, hingga pengisian tulisan pada kertas A3.}
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 11: Pengantar Konstruksi Geometris
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Konstruksi Geometris: Garis}
+
+	\textbf{Mengapa Perlu?} Hasil konstruksi lebih akurat daripada sekadar perkiraan visual. \\
+	\textbf{Alat:} Jangka, penggaris, segitiga, pensil keras (untuk garis bantu).
+
+	\vspace{0.5em}
+	\textbf{1. Membagi Garis AB Dua Sama Panjang:}
+	\begin{itemize}
+		\item Buat busur dari A dan B dengan jari-jari yang sama.
+		\item Titik potong C dan D dihubungkan, didapat titik tengah F.
+	\end{itemize}
+
+	\textbf{2. Garis Tegak Lurus dari Titik Q pada Garis AB:}
+	\begin{itemize}
+		\item Buat busur memotong AB di S dan T dari titik Q.
+		\item Busur dari S dan T berpotongan di P. Tarik garis PQ $\perp$ AB.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t,mycolor=digiPH_white,mytitle=standard,light]
+
+	\includegraphics<1>[width=.65\textwidth]{garis lurus.jpg}
+	\includegraphics<2>[width=.65\textwidth]{garis tegak lurus.jpg}
+	\includegraphics<3>[width=.65\textwidth]{bagi sudut.jpg}
+	\includegraphics<4>[width=.62\textwidth]{segi lima diketahui.jpg}
+	\includegraphics<5>[width=.65\textwidth]{segi lima lingkaran.jpg}
+	\includegraphics<6>[width=.68\textwidth]{segienamlingkaran.jpg}
+	\includegraphics<7>[width=.65\textwidth]{segienamluarlingkar.jpg}
+	\includegraphics<8>[width=.62\textwidth]{elips dua lingkaran.jpg}
+	\includegraphics<9>[width=.62\textwidth]{elips segi empat.jpg}
+
+\end{frame}
+
+
+% ---------------------------------------------------
+% SLIDE 12: Membagi Sudut
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Konstruksi Geometris: Membagi Sudut}
+
+	\textbf{Membagi Sudut Sama Besar:}
+	\begin{enumerate}
+		\item Buat busur dari titik sudut A memotong kedua kaki sudut di titik P dan Q.
+		\item Buat busur berjari-jari sama dari titik P dan Q hingga berpotongan di titik D.
+		\item Tarik garis AD. Garis AD membagi sudut menjadi dua bagian yang sama besar.
+		\item \textbf{Maka, $\angle PAD = \angle DAQ$.}
+	\end{enumerate}
+
+	\vspace{0.5em}
+	\textbf{Latihan Terarah:} Bagi sudut $70^\circ$ menjadi dua, lalu periksa dengan busur derajat! \\
+	\textbf{Pengembangan:} Bagi lagi sudut tersebut untuk memperoleh seperempat sudut asli.
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 13: Membuat Segi Lima
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Membuat Segi Lima (Pentagon)}
+
+	\textbf{Jika Satu Sisi (AB) Diketahui:}
+	\begin{itemize}
+		\item Bagi dua sisi AB tegak lurus, buat busur berjari-jari AB.
+		\item Tentukan titik bantu, lalu hubungkan titik A–G–F–H–B.
+	\end{itemize}
+
+	\textbf{Di Dalam Lingkaran:}
+	\begin{itemize}
+		\item Buat dua sumbu silang. Bagi dua jari-jari horizontal untuk mendapat titik G.
+		\item Buat busur jari-jari GA memotong sumbu horizontal di H.
+		\item Garis AH adalah panjang sisi segi lima. Pindahkan panjang sisi ini ke keliling lingkaran.
+	\end{itemize}
+
+	\textit{Catatan Penting:} Tekankan penamaan titik bantu secara runtut agar langkah konstruksi mudah diperiksa ulang.
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 14: Membuat Segi Enam
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Membuat Segi Enam (Heksagon)}
+
+	\textbf{Di Dalam Lingkaran:}
+	\begin{itemize}
+		\item Panjang sisi segi enam beraturan \textbf{sama dengan jari-jari lingkarannya}.
+		\item Pindahkan ukuran jari-jari secara berurutan di keliling lingkaran, lalu hubungkan keenam titik potongnya.
+	\end{itemize}
+
+	\textbf{Di Luar Lingkaran:}
+	\begin{itemize}
+		\item Buat garis singgung sejajar sumbu.
+		\item Tarik garis dengan sudut $30^\circ$ dari pusat, lalu hubungkan titik potong garis singgung.
+	\end{itemize}
+
+	\textbf{Aplikasi Nyata:} Kepala baut dan mur. \textit{(Di mana lagi bentuk segi enam sering dijumpai dalam teknik?)}
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 15: Membuat Elips
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Membuat Elips}
+
+	\textbf{Metode Dua Lingkaran Konsentris:}
+	\begin{itemize}
+		\item Diameter lingkaran luar = sumbu panjang; dalam = sumbu pendek.
+		\item Tarik garis radial. Dari titik potong lingkaran luar, tarik garis vertikal. Dari lingkaran dalam, tarik garis horizontal.
+		\item Hubungkan titik-titik pertemuannya menggunakan mal lengkung.
+	\end{itemize}
+
+	\textbf{Metode Segi Empat:}
+	\begin{itemize}
+		\item Bagi setengah sumbu dan sisi segi empat luar menjadi jumlah bagian yang sama.
+		\item Tarik garis dari titik ujung sumbu ke titik bagi, hubungkan perpotongannya. (Makin banyak pembagian, elips makin halus).
+	\end{itemize}
+
+	\textbf{Aplikasi:} Menggambar lubang silindris yang tampak miring (perspektif/isometri).
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 16: Praktik & Penilaian
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Praktik Kelas \& Kriteria Penilaian}
+
+	\textbf{Tugas Kelas (Kertas A3 - Rujuk Gambar \ref{fig:tugas1}):}
+	\begin{enumerate}
+		\item Buat bingkai dan etiket gambar (ISO 5457 \& ISO 7200).
+		\item Buat latihan garis.
+		\item Tuliskan huruf/angka tegak dan miring sesuai standar proporsi.
+		\item Buat konstruksi: bagi garis, bagi sudut, segi lima, segi enam, dan elips menggunakan jangka.
+	\end{enumerate}
+
+	\vspace{0.5em}
+	\textbf{Kriteria Penilaian:}
+	\begin{itemize}
+		\item Ketepatan dan akurasi konstruksi geometris.
+		\item Keseragaman tinggi, tebal, dan kemiringan tulisan.
+		\item Kerapian dan kebersihan lembar kerja.
+		\item Kesesuaian elemen gambar dengan standar ISO.
+	\end{itemize}
+\end{frame}
+
+% ---------------------------------------------------
+% SLIDE 17: Refleksi & Tugas Rumah
+% ---------------------------------------------------
+\begin{frame}[mytitle=standard]
+	\frametitle{Refleksi \& Penugasan}
+
+	% \begin{blockcolor}
+	% 	\textbf{Refleksi Kelas:} \\
+	% 	\textit{"Dari praktik hari ini, bagian mana yang menurut Anda paling sulit dibuat konsisten secara manual, dan mengapa?"}
+	% \end{blockcolor}
+	%
+	\vspace{0.5em}
+	\textbf{Tugas Rumah:}
+	\begin{itemize}
+		\item Menyelesaikan lembar latihan konstruksi dan etiket yang belum rampung.
+		\item Membandingkan hasil huruf manual Anda dengan fon standar ISO (misal: \textit{isocpeur}) pada perangkat lunak CAD, kemudian tuliskan analisis singkat perbedaannya.
+	\end{itemize}
+
+	\vspace{0.5em}
+	\textbf{Pratinjau Pertemuan Berikutnya:}
+	\textit{Proyeksi Ortogonal: Sistem Kuadran I (Eropa) dan Kuadran III (Amerika).}
+
+	% Dummy label for reference check
+	\begin{figure}[h]
+		\phantom{\includegraphics[width=1cm]{example-image}}
+		\vspace{-2em}
+		\caption{\label{fig:tugas1}\textit{(Instruksi Visual Tugas Kelas ada pada Lembar Kerja)}}
+	\end{figure}
+\end{frame}
+
+\end{document}
